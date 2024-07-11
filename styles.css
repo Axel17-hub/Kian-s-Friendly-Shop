@@ -444,23 +444,6 @@ header #toggler {
     background-color: rgba(55, 183, 195, 0.2); /* Adjust background color for selected items */
 }
 
-/* Contact Us Section */
-#contact {
-    height: 100vh; /* Make section fill the viewport height */
-    padding: 100px 9% 20px; /* Adjust padding as needed */
-    background-color: var(--teal);
-    color: var(--off-white);
-}
-
-.contact-content h2 {
-    font-size: 28px;
-    text-align: center;
-    margin-bottom: 30px;
-    color: #071952; /* Adjust color to match your design */
-    text-transform: uppercase;
-    letter-spacing: 1px;
-}
-
 /* About Us Section */
 #about {
     height: 100vh; /* Make section fill the viewport height */
@@ -483,6 +466,32 @@ header #toggler {
     text-align: center;
     margin-bottom: 30px;
     color: var(--dark-blue); /* Adjust color to match your design */
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Contact Us Section */
+#contact {
+    height: 100vh; /* Make section fill the viewport height */
+    padding: 100px 9% 20px; /* Adjust padding as needed */
+    background-color: var(--teal);
+    color: var(--off-white);
+}
+
+.contact-content h2 {
+    font-size: 28px;
+    text-align: center;
+    margin-bottom: 30px;
+    color: #071952; /* Adjust color to match your design */
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.contact-content p {
+    font-size: 15px;
+    text-align: center;
+    margin-bottom: 30px;
+    color: var(--off-white); /* Adjust color to match your design */
     text-transform: uppercase;
     letter-spacing: 1px;
 }
