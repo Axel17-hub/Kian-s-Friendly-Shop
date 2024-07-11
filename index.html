@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kian's Friendly Shop</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Include Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- Header section with navigation menu -->
+    <header>
+        <a href="index.html" class="logo-link">
+            <img src="images/logo.png" alt="logo" class="logo-pic">
+            <div class="logo">Kian's Friendly Shop</div>
+        </a>
+        <input type="checkbox" id="toggler">
+        <label for="toggler" class="fas fa-bars"></label>
+        <nav class="navbar">
+            <a href="#home" class="nav-link">Home</a>
+            <a href="#products" class="nav-link">Products</a>
+            <a href="#cart" class="nav-link">Cart</a>
+            <a href="#about" class="nav-link">About Us</a>
+            <a href="#contact" class="nav-link">Contact</a>
+            <a href="signIn.html" class="nav-link">Sign In</a> 
+        </nav>
+    </header>
+
+    <!-- Home section with carousel and search bar -->
+    <section id="home">
+        <div class="carousel">
+            <div class="carousel-slide" style="background-image: url('images/logo.png');"></div>
+            <div class="carousel-slide" style="background-image: url('images/logo.png');"></div>
+            <div class="carousel-slide" style="background-image: url('images/logo.png');"></div>
+            <div class="carousel-slide" style="background-image: url('images/logo.png');"></div>
+            <div class="carousel-slide" style="background-image: url('images/logo.png');"></div>
+        </div>
+        <div class="search">
+            <input type="text" placeholder="Search for products...">
+            <button class="search-btn">Search</button>
+        </div>
+
+        <div class="footer-container">
+            <div class="footer-nav">
+                <p><a href="#home">Home</a></p>
+                <p><a href="#products">Products</a></p>
+                <p><a href="#cart">Cart</a></p>
+                <p><a href="#about">About Us</a></p>
+                <p><a href="#contact">Contact</a></p>
+            </div>
+            <div class="stay-connected">
+                <p>Stay Connected:</p>
+                <div class="social-media-icons">
+                    <a href="https://www.facebook.com/profile.php?id=100091635424718" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Kian's Friendly Shop. All Rights Reserved.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products section with categories -->
+    <section id="products">
+        <div class="product-categories">
+            <h2>Products Available</h2>
+            <div class="category-list">
+                <div class="category-item">
+                    <div class="product-image">
+                        <img src="images/notebook.jpeg" alt="Product 1">
+                    </div>
+                    <div class="product-info">
+                        <h3>Product Name 1</h3>
+                        <p class="price">₱99.99</p>
+                        <button class="add-to-cart-btn">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="category-item">
+                    <div class="product-image">
+                        <img src="images/logo.png" alt="Product 2">
+                    </div>
+                    <div class="product-info">
+                        <h3>Product Name 2</h3>
+                        <p class="price">₱149.99</p>
+                        <button class="add-to-cart-btn">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="category-item">
+                    <div class="product-image">
+                        <img src="images/background" alt="Product 3">
+                    </div>
+                    <div class="product-info">
+                        <h3>Product Name 3</h3>
+                        <p class="price">₱199.99</p>
+                        <button class="add-to-cart-btn">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="category-item">
+                    <div class="product-image">
+                        <img src="images/notebook.jpeg" alt="Product 4">
+                    </div>
+                    <div class="product-info">
+                        <h3>Product Name 4</h3>
+                        <p class="price">₱129.99</p>
+                        <button class="add-to-cart-btn">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="category-item">
+                    <div class="product-image">
+                        <img src="images/logo.png" alt="Product 5">
+                    </div>
+                    <div class="product-info">
+                        <h3>Product Name 5</h3>
+                        <p class="price">₱179.99</p>
+                        <button class="add-to-cart-btn">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="category-item">
+                    <div class="product-image">
+                        <img src="images/background" alt="Product 6">
+                    </div>
+                    <div class="product-info">
+                        <h3>Product Name 6</h3>
+                        <p class="price">₱159.99</p>
+                        <button class="add-to-cart-btn">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="category-item">
+                    <div class="product-image">
+                        <img src="images/notebook.jpeg" alt="Product 7">
+                    </div>
+                    <div class="product-info">
+                        <h3>Product Name 7</h3>
+                        <p class="price">₱109.99</p>
+                        <button class="add-to-cart-btn">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="category-item">
+                    <div class="product-image">
+                        <img src="images/logo.png" alt="Product 8">
+                    </div>
+                    <div class="product-info">
+                        <h3>Product Name 8</h3>
+                        <p class="price">₱189.99</p>
+                        <button class="add-to-cart-btn">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="category-item">
+                    <div class="product-image">
+                        <img src="images/background" alt="Product 1">
+                    </div>
+                    <div class="product-info">
+                        <h3>Product Name 9</h3>
+                        <p class="price">₱99.99</p>
+                        <button class="add-to-cart-btn">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="category-item">
+                    <div class="product-image">
+                        <img src="images/notebook.jpeg" alt="Product 2">
+                    </div>
+                    <div class="product-info">
+                        <h3>Product Name 10</h3>
+                        <p class="price">₱149.99</p>
+                        <button class="add-to-cart-btn">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="category-item">
+                    <div class="product-image">
+                        <img src="images/logo.png" alt="Product 3">
+                    </div>
+                    <div class="product-info">
+                        <h3>Product Name 11</h3>
+                        <p class="price">₱199.99</p>
+                        <button class="add-to-cart-btn">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="category-item">
+                    <div class="product-image">
+                        <img src="images/background" alt="Product 4">
+                    </div>
+                    <div class="product-info">
+                        <h3>Product Name 12</h3>
+                        <p class="price">₱129.99</p>
+                        <button class="add-to-cart-btn">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="category-item">
+                    <div class="product-image">
+                        <img src="images/notebook.jpeg" alt="Product 5">
+                    </div>
+                    <div class="product-info">
+                        <h3>Product Name 13</h3>
+                        <p class="price">₱179.99</p>
+                        <button class="add-to-cart-btn">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="category-item">
+                    <div class="product-image">
+                        <img src="images/logo.png" alt="Product 6">
+                    </div>
+                    <div class="product-info">
+                        <h3>Product Name 14</h3>
+                        <p class="price">₱159.99</p>
+                        <button class="add-to-cart-btn">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="category-item">
+                    <div class="product-image">
+                        <img src="images/background" alt="Product 7">
+                    </div>
+                    <div class="product-info">
+                        <h3>Product Name 15</h3>
+                        <p class="price">₱109.99</p>
+                        <button class="add-to-cart-btn">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="category-item">
+                    <div class="product-image">
+                        <img src="images/notebook.jpeg" alt="Product 8">
+                    </div>
+                    <div class="product-info">
+                        <h3>Product Name 16</h3>
+                        <p class="price">₱189.99</p>
+                        <button class="add-to-cart-btn">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cart section -->
+    <section id="cart">
+        <div class="cart-content">
+            <h2>Your Cart</h2>
+            <div class="cart-summary">
+                <h3>Cart Summary</h3>
+                <div class="cart-details">
+                    <p>Total Items: <span id="totalItems">0</span></p>
+                    <p>Total Price: <span id="totalPrice">₱0.00</span></p>
+                </div>
+            </div>
+            <div id="cartItems"></div>
+
+            <button id="checkoutButton" disabled>Checkout Selected Items</button>
+        </div>
+    </section>
+
+    <!-- Message Box -->
+    <div id="messageBox"></div> 
+
+    <!-- About Us section -->
+    <section id="about">
+        <div class="about-content">
+            <h2>About Us</h2>
+            <p>Welcome to Kian's Friendly Shop. We offer a wide variety of products to cater to all your needs.</p>
+        </div> 
+    </section>
+
+    <!-- Footer section -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-nav">
+                <p><a href="#home">Home</a></p>
+                <p><a href="#products">Products</a></p>
+                <p><a href="#cart">Cart</a></p>
+                <p><a href="#about">About Us</a></p>
+                <p><a href="#contact">Contact</a></p>
+            </div>
+            <div class="stay-connected">
+                <p>Stay Connected:</p>
+                <div class="social-media-icons">
+                    <a href="https://www.facebook.com/profile.php?id=100091635424718" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Kian's Friendly Shop. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Link your JavaScript file -->
+    <script src="script.js"></script>
+
+    <!-- Include Font Awesome script -->
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js"></script>
+</body>
+</html>
