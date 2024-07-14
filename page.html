@@ -1,0 +1,722 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kian's Friendly Shop</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- Include Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- Header section with navigation menu -->
+    <header>
+        <a href="page.html" class="logo-link">
+            <img src="images/logo.png" alt="logo" class="logo-pic">
+            <div class="logo">Kian's Friendly Shop</div>
+        </a>
+        <input type="checkbox" id="toggler">
+        <label for="toggler" class="fas fa-bars"></label>
+        <nav class="navbar">
+            <a href="#home" class="nav-link">Home</a>
+            <a href="#cart" class="nav-link">Cart</a>
+            <a href="#about" class="nav-link">About Us</a>
+            <a href="#contact" class="nav-link">Contact</a>
+            <a href="signIn.html" class="nav-link">Sign In</a> 
+        </nav>
+    </header>
+
+    <!-- Home section with logo, quote, order button, and search bar -->
+    <section id="home">
+        <div class="home-content">
+            <div class="home-left">
+                <h1 class="home-quote">"Your one-stop shop for all your school supply needs!"</h1>
+                <a href="#products"><button class="order-btn">Order Now</button></a>
+            </div>
+            <div class="home-right">
+                <div class="home-logo">
+                    <img src="images/logo.png" alt="Kian's Friendly Shop" class="home-logo-pic">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products section with categories -->
+    <section id="products">
+        <div class="product-categories">
+            <h2>Product Categories</h2>
+            <div class="category-wrapper">
+                <div class="category-buttons">
+                    <button onclick="filterProducts('Pens and Writing Instruments')">
+                        <i class="fa-solid fa-pen"></i> Pens
+                    </button>
+                    <button onclick="filterProducts('Paper Products')">
+                        <i class="fa-solid fa-copy"></i> Paper
+                    </button>
+                    <button onclick="filterProducts('Notebooks and Writing Pads')">
+                        <i class="fa-solid fa-book"></i> Notebooks
+                    </button>
+                    <button onclick="filterProducts('Office Accessories')">
+                        <i class="fa-solid fa-desk-lamp"></i> Accessories
+                    </button>
+                    <button onclick="filterProducts('Folders and Envelopes')">
+                        <i class="fa-solid fa-folder"></i> Folders and Envelopes
+                    </button>
+                    <button onclick="filterProducts('Art Materials')">
+                        <i class="fa-solid fa-palette"></i> Art Materials
+                    </button>
+                    <button onclick="filterProducts('Other Items')">
+                        <i class="fa-solid fa-ellipsis"></i> Other Items
+                    </button>
+                </div>
+
+                <div class="category-list">
+                <!-- Pens and Writing Instruments -->
+                <div class="category-item" data-category="Pens and Writing Instruments">
+                    <div class="product-image">
+                        <img src="images/Items/DongABallpen.jpg" alt="Dong A ballpen">
+                    </div>
+                    <h3>Dong A ballpen</h3>
+                    <p>A reliable ballpen for everyday use.</p>
+                    <p class="price">₱ 20.00</p>
+                    <div class="button-container">
+                        <button class="order-btn">Order Now</button>
+                        <button class="add-to-cart-btn">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="category-item" data-category="Pens and Writing Instruments">
+                    <div class="product-image">
+                        <img src="images/Items/InkPentel.jpg" alt="Ink pentel">
+                    </div>
+                    <h3>Ink pentel</h3>
+                    <p>Refillable ink for pens.</p>
+                    <p class="price">₱ 8.00</p>
+                    <div class="button-container">
+                        <button class="order-btn">Order Now</button>
+                        <button class="add-to-cart-btn">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="category-item" data-category="Pens and Writing Instruments">
+                    <div class="product-image">
+                        <img src="images/Items/FlexStickBallpen.jpg" alt="Flex stick ballpen">
+                    </div>
+                    <h3>Flex stick ballpen</h3>
+                    <p>Smooth and comfortable ballpen.</p>
+                    <p class="price">₱ 25.00</p>
+                    <div class="button-container">
+                        <button class="order-btn">Order Now</button>
+                        <button class="add-to-cart-btn">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="category-item" data-category="Pens and Writing Instruments">
+                    <div class="product-image">
+                        <img src="images/Items/MongolPencil.jpg" alt="Mongol pencil">
+                    </div>
+                    <h3>Mongol pencil</h3>
+                    <p>Classic wooden pencil.</p>
+                    <p class="price">₱ 15.00</p>
+                    <div class="button-container">
+                        <button class="order-btn">Order Now</button>
+                        <button class="add-to-cart-btn">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="category-item" data-category="Pens and Writing Instruments">
+                    <div class="product-image">
+                        <img src="images/Items/PandaBallpen.jpg" alt="Panda ballpen">
+                    </div>
+                    <h3>Panda ballpen</h3>
+                    <p>Cute and reliable ballpen.</p>
+                    <p class="price">₱ 18.00</p>
+                    <div class="button-container">
+                        <button class="order-btn">Order Now</button>
+                        <button class="add-to-cart-btn">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="category-item" data-category="Pens and Writing Instruments">
+                    <div class="product-image">
+                        <img src="images/Items/PilotPentelPen.jpg" alt="Pilot pentel pen">
+                    </div>
+                    <h3>Pilot pentel pen</h3>
+                    <p>Smooth writing experience.</p>
+                    <p class="price">₱ 30.00</p>
+                    <div class="button-container">
+                        <button class="order-btn">Order Now</button>
+                        <button class="add-to-cart-btn">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- Paper Products -->
+                <div class="category-item" data-category="Paper Products">
+                    <div class="product-image">
+                        <img src="images/Items/Copy&LaserBondPaper.jpg" alt="Copy&laser bond paper">
+                    </div>
+                    <h3>Copy&laser bond paper</h3>
+                    <p>High-quality bond paper for printing and copying.</p>
+                    <p class="price">₱ 100.00</p>
+                    <div class="button-container">
+                        <button class="order-btn">Order Now</button>
+                        <button class="add-to-cart-btn">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="category-item" data-category="Paper Products">
+                    <div class="product-image">
+                        <img src="images/Items/CopyOneBandPaper.jpg" alt="Copy one bond paper">
+                    </div>
+                    <h3>Copy one bond paper</h3>
+                    <p>Economical bond paper suitable for everyday use.</p>
+                    <p class="price">₱ 80.00</p>
+                    <div class="button-container">
+                        <button class="order-btn">Order Now</button>
+                        <button class="add-to-cart-btn">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="category-item" data-category="Paper Products">
+                    <div class="product-image">
+                        <img src="images/Items/CrepePaper.jpg" alt="Crepe paper">
+                    </div>
+                    <h3>Crepe paper</h3>
+                    <p>Vibrant and flexible craft paper.</p>
+                    <p class="price">₱ 25.00</p>
+                    <div class="button-container">
+                        <button class="order-btn">Order Now</button>
+                        <button class="add-to-cart-btn">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="category-item" data-category="Paper Products">
+                    <div class="product-image">
+                        <img src="images/Items/IndexCard1_4.jpg" alt="Index cards">
+                    </div>
+                    <h3>Index cards</h3>
+                    <p>For organized note-taking.</p>
+                    <p class="price">₱ 10.00</p>
+                    <div class="button-container">
+                        <button class="order-btn">Order Now</button>
+                        <button class="add-to-cart-btn">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="category-item" data-category="Paper Products">
+                    <div class="product-image">
+                        <img src="images/Items/ManilaPaper.jpg" alt="Manila paper">
+                    </div>
+                    <h3>Manila paper</h3>
+                    <p>Durable and versatile paper.</p>
+                    <p class="price">₱ 30.00</p>
+                    <div class="button-container">
+                        <button class="order-btn">Order Now</button>
+                        <button class="add-to-cart-btn">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="category-item" data-category="Paper Products">
+                    <div class="product-image">
+                        <img src="images/Items/OsloPaper.jpg" alt="Oslo paper">
+                    </div>
+                    <h3>Oslo paper</h3>
+                    <p>Smooth and fine-quality paper.</p>
+                    <p class="price">₱ 40.00</p>
+                    <div class="button-container">
+                        <button class="order-btn">Order Now</button>
+                        <button class="add-to-cart-btn">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="category-item" data-category="Paper Products">
+                    <div class="product-image">
+                        <img src="images/Items/YellowPad.jpg" alt="Yellow pad paper">
+                    </div>
+                    <h3>Yellow pad paper</h3>
+                    <p>Legal-sized writing pad.</p>
+                    <p class="price">₱ 50.00</p>
+                    <div class="button-container">
+                        <button class="order-btn">Order Now</button>
+                        <button class="add-to-cart-btn">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- Notebooks and Writing Pads -->
+                <div class="category-item" data-category="Notebooks and Writing Pads">
+                    <div class="product-image">
+                        <img src="images/Items/ColumnarBrown.jpg" alt="Columnar brown">
+                    </div>
+                    <h3>Columnar brown</h3>
+                    <p>Used for accounting and record-keeping.</p>
+                    <p class="price">₱ 120.00</p>
+                    <div class="button-container">
+                        <button class="order-btn">Order Now</button>
+                        <button class="add-to-cart-btn">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="category-item" data-category="Notebooks and Writing Pads">
+                    <div class="product-image">
+                        <img src="images/Items/ColumnarNotebook.jpg" alt="Columnar notebook">
+                    </div>
+                    <h3>Columnar notebook</h3>
+                    <p>Organized notebook for keeping records.</p>
+                    <p class="price">₱ 150.00</p>
+                    <div class="button-container">
+                        <button class="order-btn">Order Now</button>
+                        <button class="add-to-cart-btn">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="category-item" data-category="Notebooks and Writing Pads">
+                    <div class="product-image">
+                        <img src="images/Items/FillerNotebookFocus.jpg" alt="Filler notebook">
+                    </div>
+                    <h3>Filler notebook</h3>
+                    <p>Essential for school or office use.</p>
+                    <p class="price">₱ 120.00</p>
+                    <div class="button-container">
+                        <button class="order-btn">Order Now</button>
+                        <button class="add-to-cart-btn">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="category-item" data-category="Notebooks and Writing Pads">
+                    <div class="product-image">
+                        <img src="images/Items/GraphingNotebook.jpg" alt="Graphing notebook">
+                    </div>
+                    <h3>Graphing notebook</h3>
+                    <p>For plotting graphs and diagrams.</p>
+                    <p class="price">₱ 100.00</p>
+                    <div class="button-container">
+                        <button class="order-btn">Order Now</button>
+                        <button class="add-to-cart-btn">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="category-item" data-category="Notebooks and Writing Pads">
+                    <div class="product-image">
+                        <img src="images/Items/HardCopyBondPaper.jpg" alt="HardCopy bond paper">
+                    </div>
+                    <h3>HardCopy bond paper</h3>
+                    <p>Sturdy bond paper for notes.</p>
+                    <p class="price">₱ 90.00</p>
+                    <div class="button-container">
+                        <button class="order-btn">Order Now</button>
+                        <button class="add-to-cart-btn">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="category-item" data-category="Notebooks and Writing Pads">
+                    <div class="product-image">
+                        <img src="images/Items/Notebook.jpg" alt="Notebook">
+                    </div>
+                    <h3>Notebook</h3>
+                    <p>General-purpose notebook.</p>
+                    <p class="price">₱ 70.00</p>
+                    <div class="button-container">
+                        <button class="order-btn">Order Now</button>
+                        <button class="add-to-cart-btn">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="category-item" data-category="Notebooks and Writing Pads">
+                    <div class="product-image">
+                        <img src="images/Items/LessonPlanStandard.jpg" alt="Standard lesson plan">
+                    </div>
+                    <h3>Standard lesson plan</h3>
+                    <p>For educational planning.</p>
+                    <p class="price">₱ 60.00</p>
+                    <div class="button-container">
+                        <button class="order-btn">Order Now</button>
+                        <button class="add-to-cart-btn">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="category-item" data-category="Notebooks and Writing Pads">
+                    <div class="product-image">
+                        <img src="images/Items/LessonPlanVictory.jpg" alt="Victory lesson plan">
+                    </div>
+                    <h3>Victory lesson plan</h3>
+                    <p>Specially formatted for lesson planning.</p>
+                    <p class="price">₱ 75.00</p>
+                    <div class="button-container">
+                        <button class="order-btn">Order Now</button>
+                        <button class="add-to-cart-btn">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="category-item" data-category="Notebooks and Writing Pads">
+                    <div class="product-image">
+                        <img src="images/Items/RecordBook.jpg" alt="Record book">
+                    </div>
+                    <h3>Record book</h3>
+                    <p>For detailed record-keeping.</p>
+                    <p class="price">₱ 60.00</p>
+                    <div class="button-container">
+                        <button class="order-btn">Order Now</button>
+                        <button class="add-to-cart-btn">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- Accessories -->
+                <div class="category-item" data-category="Office Accessories">
+                    <div class="product-image">
+                        <img src="images/Items/CertificateHolder.jpg" alt="Certificate holder">
+                    </div>
+                    <h3>Certificate holder</h3>
+                    <p>Keeps certificates safe and protected.</p>
+                    <p class="price">₱ 80.00</p>
+                    <div class="button-container">
+                        <button class="order-btn">Order Now</button>
+                        <button class="add-to-cart-btn">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="category-item" data-category="Office Accessories">
+                    <div class="product-image">
+                        <img src="images/Items/CitizenCalculator.jpg" alt="Citizen calculator">
+                    </div>
+                    <h3>Citizen calculator</h3>
+                    <p>Basic calculator for everyday calculations.</p>
+                    <p class="price">₱ 250.00</p>
+                    <div class="button-container">
+                        <button class="order-btn">Order Now</button>
+                        <button class="add-to-cart-btn">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="category-item" data-category="Office Accessories">
+                    <div class="product-image">
+                        <img src="images/Items/DexinCalculator.jpg" alt="Dexin calculator">
+                    </div>
+                    <h3>Dexin calculator</h3>
+                    <p>Compact and efficient calculator.</p>
+                    <p class="price">₱ 150.00</p>
+                    <div class="button-container">
+                        <button class="order-btn">Order Now</button>
+                        <button class="add-to-cart-btn">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="category-item" data-category="Office Accessories">
+                    <div class="product-image">
+                        <img src="images/Items/KaerdaCalculator.jpg" alt="Kaerda calculator">
+                    </div>
+                    <h3>Kaerda calculator</h3>
+                    <p>Dual-powered calculator.</p>
+                    <p class="price">₱ 180.00</p>
+                    <div class="button-container">
+                        <button class="order-btn">Order Now</button>
+                        <button class="add-to-cart-btn">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="category-item" data-category="Office Accessories">
+                    <div class="product-image">
+                        <img src="images/Items/KKCalculator.jpg" alt="Kaerda calculator">
+                    </div>
+                    <h3>KKCalculator</h3>
+                    <p>Powered calculator.</p>
+                    <p class="price">₱ 180.00</p>
+                    <div class="button-container">
+                        <button class="order-btn">Order Now</button>
+                        <button class="add-to-cart-btn">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="category-item" data-category="Office Accessories">
+                    <div class="product-image">
+                        <img src="images/Items/Rulers.jpg" alt="Rulers">
+                    </div>
+                    <h3>Rulers</h3>
+                    <p>Essential for measuring and drawing straight lines.</p>
+                    <p class="price">₱ 10.00</p>
+                    <div class="button-container">
+                        <button class="order-btn">Order Now</button>
+                        <button class="add-to-cart-btn">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="category-item" data-category="Office Accessories">
+                    <div class="product-image">
+                        <img src="images/Items/Scissor.jpg" alt="Scissors">
+                    </div>
+                    <h3>Scissors</h3>
+                    <p>Sharp and durable scissors.</p>
+                    <p class="price">₱ 25.00</p>
+                    <div class="button-container">
+                        <button class="order-btn">Order Now</button>
+                        <button class="add-to-cart-btn">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="category-item" data-category="Office Accessories">
+                    <div class="product-image">
+                        <img src="images/Items/ScothTapeArmak.jpg" alt="Scotch tape">
+                    </div>
+                    <h3>Scotch tape</h3>
+                    <p>Adhesive tape for various uses.</p>
+                    <p class="price">₱ 5.00</p>
+                    <div class="button-container">
+                        <button class="order-btn">Order Now</button>
+                        <button class="add-to-cart-btn">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- Folders and Envelopes -->
+                <div class="category-item" data-category="Folders and Envelopes">
+                    <div class="product-image">
+                        <img src="images/Items/BrownEnvelope.jpg" alt="Brown envelope">
+                    </div>
+                    <h3>Brown envelope</h3>
+                    <p>Standard brown envelope for mailing.</p>
+                    <p class="price">₱ 5.00</p>
+                    <div class="button-container">
+                        <button class="order-btn">Order Now</button>
+                        <button class="add-to-cart-btn">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="category-item" data-category="Folders and Envelopes">
+                    <div class="product-image">
+                        <img src="images/Items/ClearFolder.jpg" alt="Clear folder">
+                    </div>
+                    <h3>Clear folder</h3>
+                    <p>Transparent folder for easy document visibility.</p>
+                    <p class="price">₱ 15.00</p>
+                    <div class="button-container">
+                        <button class="order-btn">Order Now</button>
+                        <button class="add-to-cart-btn">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="category-item" data-category="Folders and Envelopes">
+                    <div class="product-image">
+                        <img src="images/Items/ExpandableFolder.jpg" alt="Expandable folder">
+                    </div>
+                    <h3>Expandable folder</h3>
+                    <p>Accommodates a large number of documents.</p>
+                    <p class="price">₱ 25.00</p>
+                    <div class="button-container">
+                        <button class="order-btn">Order Now</button>
+                        <button class="add-to-cart-btn">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="category-item" data-category="Folders and Envelopes">
+                    <div class="product-image">
+                        <img src="images/Items/FileFolder.jpg" alt="File folder">
+                    </div>
+                    <h3>File folder</h3>
+                    <p>Keeps documents organized and protected.</p>
+                    <p class="price">₱ 20.00</p>
+                    <div class="button-container">
+                        <button class="order-btn">Order Now</button>
+                        <button class="add-to-cart-btn">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="category-item" data-category="Folders and Envelopes">
+                    <div class="product-image">
+                        <img src="images/Items/PlasticEnvelope.jpg" alt="Plastic envelope">
+                    </div>
+                    <h3>Plastic envelope</h3>
+                    <p>Water-resistant envelope for protecting documents.</p>
+                    <p class="price">₱ 10.00</p>
+                    <div class="button-container">
+                        <button class="order-btn">Order Now</button>
+                        <button class="add-to-cart-btn">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="category-item" data-category="Folders and Envelopes">
+                    <div class="product-image">
+                        <img src="images/Items/SlidingFolder.jpg" alt="Sliding folder">
+                    </div>
+                    <h3>Sliding folder</h3>
+                    <p>Easy access and storage.</p>
+                    <p class="price">₱ 30.00</p>
+                    <div class="button-container">
+                        <button class="order-btn">Order Now</button>
+                        <button class="add-to-cart-btn">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- Art Materials -->
+                <div class="category-item" data-category="Art Materials">
+                    <div class="product-image">
+                        <img src="images/Items/AcrylicPaint.jpg" alt="Acrylic paint">
+                    </div>
+                    <h3>Acrylic paint</h3>
+                    <p>Rich and vibrant colors.</p>
+                    <p class="price">₱ 50.00</p>
+                    <div class="button-container">
+                        <button class="order-btn">Order Now</button>
+                        <button class="add-to-cart-btn">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="category-item" data-category="Art Materials">
+                    <div class="product-image">
+                        <img src="images/Items/ElmersGlue.jpg" alt="Elmer's glue">
+                    </div>
+                    <h3>Elmer's glue</h3>
+                    <p>Strong adhesive for various crafting needs.</p>
+                    <p class="price">₱ 20.00</p>
+                    <div class="button-container">
+                        <button class="order-btn">Order Now</button>
+                        <button class="add-to-cart-btn">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="category-item" data-category="Art Materials">
+                    <div class="product-image">
+                        <img src="images/Items/Highlighters.jpg" alt="Highlighters">
+                    </div>
+                    <h3>Highlighters</h3>
+                    <p>For emphasizing important notes.</p>
+                    <p class="price">₱ 30.00</p>
+                    <div class="button-container">
+                        <button class="order-btn">Order Now</button>
+                        <button class="add-to-cart-btn">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="category-item" data-category="Art Materials">
+                    <div class="product-image">
+                        <img src="images/Items/OilPastels.jpg" alt="Oil pastels">
+                    </div>
+                    <h3>Oil pastels</h3>
+                    <p>Smooth and blendable pastels.</p>
+                    <p class="price">₱ 40.00</p>
+                    <div class="button-container">
+                        <button class="order-btn">Order Now</button>
+                        <button class="add-to-cart-btn">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="category-item" data-category="Art Materials">
+                    <div class="product-image">
+                        <img src="images/Items/PaintTube.jpg" alt="Paint tube">
+                    </div>
+                    <h3>Paint tube</h3>
+                    <p>Tube packaging for easy use.</p>
+                    <p class="price">₱ 60.00</p>
+                    <div class="button-container">
+                        <button class="order-btn">Order Now</button>
+                        <button class="add-to-cart-btn">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="category-item" data-category="Art Materials">
+                    <div class="product-image">
+                        <img src="images/Items/WaterColor.jpg" alt="Watercolor">
+                    </div>
+                    <h3>Watercolor</h3>
+                    <p>For beautiful watercolor paintings.</p>
+                    <p class="price">₱ 70.00</p>
+                    <div class="button-container">
+                        <button class="order-btn">Order Now</button>
+                        <button class="add-to-cart-btn">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- Other Items -->
+                <div class="category-item" data-category="Other Items">
+                    <div class="product-image">
+                        <img src="images/Items/Compass.jpg" alt="Compass">
+                    </div>
+                    <h3>Compass</h3>
+                    <p>For accurate drawing of circles.</p>
+                    <p class="price">₱ 15.00</p>
+                    <div class="button-container">
+                        <button class="order-btn">Order Now</button>
+                        <button class="add-to-cart-btn">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="category-item" data-category="Other Items">
+                    <div class="product-image">
+                        <img src="images/Items/Efan.jpg" alt="Compass">
+                    </div>
+                    <h3>Efans</h3>
+                    <p>For cooling down.</p>
+                    <p class="price">₱ 120.00</p>
+                    <div class="button-container">
+                        <button class="order-btn">Order Now</button>
+                        <button class="add-to-cart-btn">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="category-item" data-category="Other Items">
+                    <div class="product-image">
+                        <img src="images/Items/CustomizeMug.jpg" alt="Customize mug">
+                    </div>
+                    <h3>Customize mug</h3>
+                    <p>Personalized mug for gifts or personal use.</p>
+                    <p class="price">₱ 80.00</p>
+                    <div class="button-container">
+                        <button class="order-btn">Order Now</button>
+                        <button class="add-to-cart-btn">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="category-item" data-category="Other Items">
+                    <div class="product-image">
+                        <img src="images/Items/MugB&W.jpg" alt="Mug B&W">
+                    </div>
+                    <h3>Mug B&W</h3>
+                    <p>Black and white mug.</p>
+                    <p class="price">₱ 60.00</p>
+                    <div class="button-container">
+                        <button class="order-btn">Order Now</button>
+                        <button class="add-to-cart-btn">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Custom Modal -->
+    <div id="customModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Add to Cart</h2>
+            <p id="modalMessage"></p>
+            <input type="number" id="modalQuantityInput" value="1" min="1">
+            <button id="modalAddToCartBtn">Add to Cart</button>
+        </div>
+    </div>
+
+    <!-- Notification Box -->
+    <div id="notificationBox"></div>    
+
+    <!-- Cart section -->
+    <section id="cart">
+        <div class="cart-content">
+            <h2>Your Cart</h2>
+            <div class="cart-summary">
+                <h3>Cart Summary</h3>
+                <div class="cart-details">
+                    <p>Total Items: <span id="totalItems">0</span></p>
+                    <p>Total Price: <span id="totalPrice">₱ 0.00</span></p>
+                </div>
+            </div>
+            <div id="cartItems"></div>
+
+            <button id="checkoutButton" disabled>Checkout Selected Items</button>
+        </div>
+    </section>
+
+    <!-- About Us section -->
+    <section id="about">
+        <div class="about-content">
+            <h2>About Us</h2>
+            <p>Welcome to Kian's Friendly Shop. We offer a wide variety of products to cater to all your needs.</p>
+        </div> 
+    </section>
+
+    <!-- Contact section -->
+    <section id="contact">
+        <div class="contact-content">
+            <h2>Contact Us</h2>
+            <p>Contact us for any inquiries or feedback. We are here to assist you!</p>
+        </div> 
+    </section>
+
+    <!-- Footer section -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-nav">
+                <p><a href="#home">Home</a></p>
+                <p><a href="#products">Products</a></p>
+                <p><a href="#cart">Cart</a></p>
+                <p><a href="#about">About Us</a></p>
+                <p><a href="#contact">Contact</a></p>
+            </div>
+            <div class="stay-connected">
+                <p>Stay Connected:</p>
+                <div class="social-media-icons">
+                    <a href="https://www.facebook.com/profile.php?id=100091635424718" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Kian's Friendly Shop. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Link your JavaScript file -->
+    <script src="js/script.js"></script>
+
+    <!-- Include Font Awesome script -->
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js"></script>
+</body>
+</html>

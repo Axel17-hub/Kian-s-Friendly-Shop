@@ -1,0 +1,249 @@
+/* General styling */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #EBF4F6;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center; /* Center align everything horizontally */
+    align-items: center; /* Center align everything vertically */
+    min-height: 100vh; /* Ensure full height of the viewport */
+}
+
+/* Header */
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #071952;
+    padding: 20px 9%;
+    display: flex;
+    justify-content: center; /* Center align items horizontally */
+    align-items: center; /* Center align items vertically */
+    box-shadow: 0 5px 10px rgba(0, 0, 0, .1);
+    z-index: 1000;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo-link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #EBF4F6;
+}
+
+.logo-pic {
+    width: 80px; /* Adjust as needed */
+    height: auto;
+    margin-right: 15px;
+}
+
+.logo {
+    font-size: 2rem; /* Adjust as needed */
+    font-weight: bolder;
+}
+
+/* Container */
+.container {
+    width: 80%;
+    max-width: 600px;
+    background-color: #EBF4F6;
+    padding: 20px;
+    margin: 120px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #071952;
+}
+
+/* Styling for order items */
+.order-items {
+    margin-top: 20px;
+}
+
+.order-item {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #ccc;
+    padding: 10px;
+}
+
+.order-item .item-image {
+    flex: 0 0 100px; /* Adjust image container width as needed */
+    margin-right: 20px;
+}
+
+.order-item .item-image img {
+    max-width: 100%;
+    height: auto;
+}
+
+.order-item .item-details {
+    flex: 1;
+}
+
+.order-item .item-details h3 {
+    margin-bottom: 5px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.order-item .item-details p {
+    margin: 5px 0;
+    font-size: 14px;
+    color: #333;
+}
+
+/* Styling for form inputs */
+.checkout-form label {
+    display: block;
+    margin-bottom: 8px;
+    color: #071952;
+    font-weight: bold;
+}
+
+.checkout-form input[type="text"],
+.checkout-form input[type="email"],
+.checkout-form input[type="tel"],
+.checkout-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+.checkout-form textarea {
+    resize: vertical;
+    min-height: 80px;
+}
+
+.checkout-form button[type="submit"] {
+    background-color: #088395;
+    color: #EBF4F6;
+    border: none;
+    padding: 12px 20px;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 16px;
+    width: 100%;
+}
+
+.checkout-form button[type="submit"]:hover {
+    background-color: #37B7C3;
+}
+
+.checkout-form button[type="submit"]:focus {
+    outline: none;
+}
+
+/* Total Price Container */
+.total-price-container {
+    margin: 20px;
+    padding: 10px;
+    background-color: #f2f2f2;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.total-price-container p {
+    margin: 0;
+    font-size: 18px;
+    color: #333;
+}
+
+#total-price {
+    font-size: 20px;
+    font-weight: bold;
+    color: #088395;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+    }
+}
+
+.go-back-link {
+    display: inline-block;
+    margin-top: 10px;
+    text-decoration: none;
+    color: #088395;
+}
+
+.go-back-link:hover {
+    text-decoration: underline;
+}
+
+/* Styles for Checkout Receipt */
+.receipt {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    border: 2px solid #333;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    display: none; /* Initially hidden */
+    width: 80%; /* Adjust width as needed */
+    max-width: 600px; /* Limit maximum width */
+}
+
+.receipt-content {
+    text-align: center;
+}
+
+.receipt h2 {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+.receipt-details {
+    margin-bottom: 20px;
+}
+
+.receipt-details p {
+    margin: 5px 0;
+}
+
+.order-items, .receipt-items {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.order-item, .receipt-item {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.order-item img, .receipt-item img {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+
+.order-item-info, .receipt-item-info {
+    flex: 1;
+}

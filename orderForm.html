@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Form</title>
+    <link rel="stylesheet" href="css/cssOrderForm.css">
+</head>
+<body>
+    <!-- Logo section -->
+    <header class="header">
+        <div class="logo-container">
+            <a href="#" class="logo-link">
+                <img src="images/logo.png" alt="logo" class="logo-pic">
+                <div class="logo">Kian's Friendly Shop</div>
+            </a>
+        </div>
+    </header>
+
+    <div class="container">
+        <h2>Order Details</h2>
+        <div class="product-details">
+            <img id="product-image" src="" alt="Product Image">
+            <div class="product-info">
+                <h3 id="product-name"></h3>
+                <p id="product-description"></p>
+                <p id="product-price"></p>
+            </div>
+        </div>
+        <form class="order-form">
+            <label for="quantity">Quantity:</label>
+            <input type="number" id="quantity" name="quantity" min="1" value="1" required>
+    
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+    
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+    
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" required>
+    
+            <label for="address">Address:</label>
+            <textarea id="address" name="address" rows="4" required></textarea>
+    
+            <div class="total-price-container">
+                <p>Total Price:</p>
+                <p id="total-price">₱ 0.00</p>
+            </div>
+    
+            <p class="payment-note">Payment Method: Cash on Delivery (COD) only</p>
+            <button type="submit">Place Order</button>
+            <a href="page.html" class="go-back-link">&larr; Go Back to Home</a>
+        </form>
+
+        <!-- Receipt Container (Initially hidden) -->
+        <div id="receipt" class="receipt">
+            <div class="receipt-content">
+                <h2>Order Receipt</h2>
+                <div class="receipt-details">
+                    <p><strong>Product:</strong> <span id="receipt-product-name"></span></p>
+                    <p><strong>Description:</strong> <span id="receipt-product-description"></span></p>
+                    <p><strong>Price:</strong> <span id="receipt-product-price"></span></p>
+                    <p><strong>Quantity:</strong> <span id="receipt-quantity"></span></p>
+                    <p><strong>Total Price:</strong> <span id="receipt-total-price"></span></p>
+                    <p><strong>Name:</strong> <span id="receipt-name"></span></p>
+                    <p><strong>Email:</strong> <span id="receipt-email"></span></p>
+                    <p><strong>Phone Number:</strong> <span id="receipt-phone"></span></p>
+                    <p><strong>Address:</strong> <span id="receipt-address"></span></p>
+                </div>
+                <p class="order-success">Your order has been placed successfully!</p>
+                <a href="page.html" class="go-back-link">&larr; Go Back to Home</a>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Link your JavaScript file -->
+    <script src="js/jsOrderForm.js"></script>
+</body>
+</html>
