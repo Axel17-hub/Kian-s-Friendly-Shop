@@ -98,6 +98,7 @@ header .fa-bars {
     font-size: 30px;
     color: var(--off-white);
     display: none;
+    cursor: pointer;
 }
 
 header #toggler {
@@ -110,7 +111,7 @@ header #toggler {
     }
 
     header {
-        padding: 3px;
+        padding: 10px 5%;
     }
 
     header .fa-bars {
@@ -118,18 +119,20 @@ header #toggler {
     }
 
     header #toggler:checked ~ .navbar {
-        display: block;
+        display: flex;
+        flex-direction: column;
     }
 
     .navbar {
+        display: none;
+        flex-direction: column;
+        align-items: center;
         position: absolute;
         top: 100%;
         left: 0;
         right: 0;
         background-color: var(--dark-blue);
-        display: flex;
-        flex-direction: column;
-        text-align: center;
+        z-index: 999; /* Ensure it stays above other content */
     }
 
     .nav-link {
@@ -138,6 +141,8 @@ header #toggler {
         background-color: var(--dark-blue);
         border: 1px solid var(--light-teal);
         border-radius: 5px;
+        width: 100%;
+        text-align: center;
     }
 }
 
@@ -154,8 +159,11 @@ header #toggler {
 
 .home-content {
     display: flex;
+    flex-direction: column;
+    align-items: center;
     max-width: 1200px; /* Limit content width */
-    margin: 120px;
+    width: 100%;
+    margin: 120px 0;
 }
 
 .home-left {
@@ -176,7 +184,7 @@ header #toggler {
 }
 
 .home-logo-pic {
-    width: 500px; /* Adjust size of the logo */
+    width: 300px; /* Adjust size of the logo */
     height: auto;
     animation: spin 10s linear infinite;
 }
@@ -213,6 +221,35 @@ header #toggler {
     background-color: var(--dark-blue);
 }
 
+@media (max-width: 991px) {
+    #home {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .home-content {
+        margin: 120px 0;
+    }
+
+    .home-left, .home-right {
+        padding: 0;
+        width: 100%;
+    }
+
+    .home-logo-pic {
+        width: 300px;
+    }
+
+    .home-quote {
+        font-size: 2rem;
+    }
+
+    .order-btn {
+        font-size: 1.5rem;
+        padding: 12px 24px;
+    }
+}
+
 /* Products Section */
 #products {
     height: auto; /* Adjust height as needed */
@@ -236,10 +273,8 @@ header #toggler {
 
 .category-wrapper {
     display: flex;
-    justify-content: space-between; /* Adjusted spacing */
-    align-items: flex-start; /* Align buttons to the top */
-    flex-wrap: wrap; /* Allow wrapping */
-    gap: 20px;
+    flex-direction: column; /* Stack buttons and category list */
+    align-items: center; /* Center align */
 }
 
 .category-buttons {
@@ -284,7 +319,6 @@ header #toggler {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-
 }
 
 .category-item:hover {
@@ -609,9 +643,14 @@ header #toggler {
 
 /* Footer */
 footer {
-    padding: 20px 9%;
+    padding: 0px 9%;
     background-color: var(--dark-blue);
     color: var(--off-white);
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 1000; /* Ensure it stays on top of other elements */
 }
 
 .footer-container {
@@ -621,7 +660,6 @@ footer {
     color: var(--off-white);
 }
 
-.footer-nav,
 .stay-connected {
     display: flex;
     justify-content: center;
@@ -629,14 +667,12 @@ footer {
     flex-wrap: wrap;
 }
 
-.footer-nav p a,
 .stay-connected p a {
     color: var(--off-white);
     margin: 0 15px;
     font-size: 1.6rem;
 }
 
-.footer-nav p a:hover,
 .stay-connected p a:hover {
     color: var(--light-teal);
 }
@@ -674,7 +710,7 @@ footer {
 
 .footer-bottom {
     background-color: var(--teal);
-    padding: 15px;
+    padding: 5px;
     text-align: center;
 }
 
