@@ -172,6 +172,12 @@ body {
     color: #333;
 }
 
+.tPrice {
+    margin: 5%;
+    font-size: 25px;
+    font-weight: bold;
+}
+
 #total-price {
     font-size: 20px;
     font-weight: bold;
