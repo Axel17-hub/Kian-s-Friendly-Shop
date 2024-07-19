@@ -4,9 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kian's Friendly Shop</title>
+
+    <!-- Link to your CSS file -->
     <link rel="stylesheet" href="css/styles.css">
     <!-- Include Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
 </head>
 <body>
     <!-- Header section with navigation menu -->
@@ -22,7 +25,7 @@
             <a href="#cart" class="nav-link">Cart</a>
             <a href="#about" class="nav-link">About Us</a>
             <a href="#contact" class="nav-link">Contact</a>
-            <a href="signIn.html" class="nav-link">Sign In</a> 
+            <a href="signIn.html" class="nav-link">Sign In</a>
         </nav>
     </header>
 
@@ -47,11 +50,13 @@
             <h2>Product Categories</h2>
             <div class="category-wrapper">
                 <div class="category-buttons">
-                    <button onclick="filterProducts('Pens and Writing Instruments')">
-                        <i class="fa-solid fa-pen"></i> Pens
-                    </button>
+                    <!-- Button to view all items -->
+                    <button onclick="showAllItems()" class="view-all-btn">View All Items</button>
                     <button onclick="filterProducts('Paper Products')">
                         <i class="fa-solid fa-copy"></i> Paper
+                    </button>
+                    <button onclick="filterProducts('Pens and Writing Instruments')">
+                        <i class="fa-solid fa-pen"></i> Pens
                     </button>
                     <button onclick="filterProducts('Notebooks and Writing Pads')">
                         <i class="fa-solid fa-book"></i> Notebooks
@@ -691,13 +696,6 @@
     <!-- Footer section -->
     <footer>
         <div class="footer-container">
-            <div class="footer-nav">
-                <p><a href="#home">Home</a></p>
-                <p><a href="#products">Products</a></p>
-                <p><a href="#cart">Cart</a></p>
-                <p><a href="#about">About Us</a></p>
-                <p><a href="#contact">Contact</a></p>
-            </div>
             <div class="stay-connected">
                 <p>Stay Connected:</p>
                 <div class="social-media-icons">
