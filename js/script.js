@@ -191,6 +191,18 @@ document.getElementById('checkoutButton').addEventListener('click', function() {
     window.location.href = 'checkoutForm.html';
 });
 
+// Function to show all items
+function showAllItems() {
+    const allItems = document.querySelectorAll('.category-item');
+    allItems.forEach(item => {
+        item.style.display = 'flex';  // Change this to your preferred display style
+    });
+}
+
+// Example of adding event listener to a "Show All Items" button
+document.getElementById('showAllItemsButton').addEventListener('click', showAllItems);
+
+
 
 
 
