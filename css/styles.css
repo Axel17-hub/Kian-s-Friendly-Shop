@@ -184,7 +184,7 @@ header #toggler {
 }
 
 .home-logo-pic {
-    width: 300px; /* Adjust size of the logo */
+    width: 500px; /* Adjust size of the logo */
     height: auto;
     animation: spin 10s linear infinite;
 }
@@ -253,6 +253,7 @@ header #toggler {
 /* Products Section */
 #products {
     height: auto; /* Adjust height as needed */
+    min-height: 100vh;
     padding: 80px 9% 20px; /* Adjust padding as needed */
     background-color: #37B7C3; /* Adjust background color */
     color: #fff; /* Adjust text color */
@@ -461,6 +462,7 @@ header #toggler {
 
 /* Cart Section */
 #cart {
+    min-height: 100vh;
     padding: 100px 9% 20px;
     background-color: var(--dark-blue);
     color: var(--off-white);
