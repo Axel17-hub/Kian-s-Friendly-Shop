@@ -204,6 +204,8 @@ body {
     display: none; /* Initially hidden */
     width: 80%; /* Adjust width as needed */
     max-width: 600px; /* Limit maximum width */
+    max-height: 80vh; /* Limit height to a percentage of viewport height */
+    overflow-y: auto; /* Enable vertical scrolling if content exceeds max height */
 }
 
 .receipt-content {
@@ -228,6 +230,8 @@ body {
     flex-direction: column;
     gap: 10px;
     margin-bottom: 20px;
+    max-height: 300px; /* Adjust height as needed */
+    overflow-y: auto; /* Enable vertical scrolling for the item list */
 }
 
 .order-item, .receipt-item {
@@ -246,4 +250,10 @@ body {
 
 .order-item-info, .receipt-item-info {
     flex: 1;
+}
+
+.order-success {
+    font-weight: bold;
+    color: #4CAF50;
+    margin-top: 20px;
 }
