@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', function() {
         document.getElementById('product-image').src = item.image;
         document.getElementById('product-name').textContent = item.name;
         document.getElementById('product-description').textContent = item.description;
-        document.getElementById('product-price').textContent = `Price: ₱ ${item.price}`;
+        document.getElementById('product-price').textContent = `${item.price}`;
 
         // Calculate total price based on quantity
         const quantityInput = document.getElementById('quantity');
@@ -18,7 +18,7 @@ document.addEventListener('DOMContentLoaded', function() {
             const price = parseFloat(item.price.replace('₱ ', ''));
             const totalPrice = quantity * price;
 
-            totalPriceDisplay.textContent = `Total Price: ₱ ${totalPrice.toFixed(2)}`;
+            totalPriceDisplay.textContent = `${totalPrice.toFixed(2)}`;
         });
     }
 
