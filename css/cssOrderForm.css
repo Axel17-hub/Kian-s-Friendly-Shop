@@ -233,3 +233,42 @@ body {
 .go-back-link:hover {
     text-decoration: underline;
 }
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+    }
+
+    .product-details img {
+        width: 100px;
+        height: 100px;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        width: 95%;
+    }
+
+    .product-details {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .product-details img {
+        width: 80px;
+        height: 80px;
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    .product-info {
+        text-align: center;
+    }
+
+    .total-price-container {
+        flex-direction: column;
+        text-align: center;
+    }
+}
