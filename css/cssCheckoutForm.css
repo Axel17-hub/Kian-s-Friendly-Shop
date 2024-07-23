@@ -257,3 +257,48 @@ body {
     color: #4CAF50;
     margin-top: 20px;
 }
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+    }
+
+    .order-item {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .order-item .item-image {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    .total-price-container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+
+@media (max-width: 480px) {
+    .header {
+        padding: 10px 5%;
+    }
+
+    .logo-pic {
+        width: 60px;
+        margin-right: 10px;
+    }
+
+    .logo {
+        font-size: 1.5rem;
+    }
+
+    .container {
+        padding: 15px;
+    }
+
+    .checkout-form button[type="submit"] {
+        padding: 10px;
+    }
+}
